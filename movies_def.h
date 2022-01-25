@@ -1,5 +1,7 @@
 void display_main_options(void);
 int process_main_selections(void);
+void get_largest_file(void);
+
 
 void display_main_options(void)
 {
@@ -15,4 +17,15 @@ int process_main_selection(void)
     scanf("%d", &selection);
 
     return selection;
+}
+
+void get_largest_file(void)
+{
+    DIR* currDir = opendir(".");
+    struct dirent *aDir;
+
+    while((aDir = readdir(currDir)) != NULL){
+        //compare file sizes
+    }
+
 }
