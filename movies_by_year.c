@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include </nfs/stak/users/vanders/cs344/a2-files/movies_def.h>
+#include "movies_def.h"
 
 int main(void)
 {
 
-    display_options();
+    display_main_options();
+    int x = process_main_selection();
 
     return 0;
 
